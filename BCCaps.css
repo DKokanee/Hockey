@@ -1,0 +1,94 @@
+/* INSTRUCTION and example for customize SOCCER HOCKEY or RUGBY scoreboard:
+Each element has one or more classes, so you can control one or more elements at the same time.
+On the left you can read every single element with his class */
+
+/*--- First step - FONTS: CSS involves embedding fonts at the beginning of the document. You can import and use webfont, for example here we imported a Google font (https://fonts.google.com/) ---*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/* Every scoreboard has a unique container (SOCCER = containersoccer / BASKETBALL = containerbasket etc.. read them with your browser inspector). You can use them for override styles */
+
+/*this change font and background color of logo and result */
+.boxhomepoints, .space, .boxawaypoints, .sgrlogo:before {
+  background:rgba(255, 255, 255, 0);
+  color:black;
+}
+
+/* This change font of the points */
+.boxhomepoints, .space, .boxawaypoints {
+  font-family: 'Helvetica';
+  font-size: 1.3em;
+  font-weight: bold;
+  position:relative;
+}
+
+.boxhometeam {
+  font-family: 'Helvetica';
+  font-size: 1.3em;
+  font-weight: bold;
+  position:relative;
+  color:rgb(241, 235, 235);
+}
+
+.boxawayteam {
+  font-family: 'Helvetica';
+  font-size: 1.3em;
+  font-weight: bold;
+  position:relative;
+  color:white;
+}
+
+/* This changes the color of the background of team name */
+.boxhometeam {
+  background: linear-gradient(143deg, rgb(53, 26, 26) 0%, rgb(71, 17, 17) 25%, rgba(71, 17, 17) 75%, rgb(70, 1, 1) 100%);
+}
+.boxawayteam {
+  background: linear-gradient(143deg, rgba(41, 15, 10, 0.993) 0%, rgba(37, 14, 7, 0.993) 25%, rgba(37, 14, 7, 0.993) 75%, rgba(43, 2, 1, 0.993) 100%);
+}
+
+/*this insert team badges */
+.boxhometeam:before, .boxawayteam:before {
+  content:"";
+  position:absolute;
+  width: 10vw;
+  height: 9vw;
+}
+.boxhometeam {
+  justify-content: flex-end; padding-right:9vw;
+}
+.boxhometeam:before {
+  right:1vw;
+  background: url(https://burnabyminorhockey.teamsnapsites.com/wp-content/uploads/sites/1604/2019/03/burnaby-logo-big.png) no-repeat center;
+  background-size:5vw;
+}
+
+.boxawayteam {
+  justify-content: flex-start; padding-left:9vw;
+}
+.boxawayteam:before {
+  left:1vw;
+  background: url(https://res.cloudinary.com/ddpdcse5w/image/upload/v1698622528/vmha_logo_200x160.png) no-repeat center;
+  background-size:7vw;
+}
+
+.boxhomepoints, .boxhometeam {
+  border-left: solid 1vw rgb(80, 14, 14);
+}
+.boxawaypoints, .boxawayteam {
+  border-right: solid 1vw rgb(37, 11, 1);
+}
+
+/* This changes Quarter to Period */
+.boxovertimeoff #overtime {
+  display: none;
+}
+
+.boxovertimeoff #moment:before {
+  content: "Period";
+  margin-right: 0.2em;
+  visibility: visible;
+}
+
+/*-------------------------------------------------------------------
+---- UNDER: background color and a little spase from margins. PLEASE DO NOT CONSIDER THIS-*/
+body {background:rgba(102, 102, 102, 0);}
+.containersoccer {margin: 30px 0;}
