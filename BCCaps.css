@@ -26,7 +26,7 @@ On the left you can read every single element with his class */
   font-size: 1.3em;
   font-weight: bold;
   position:relative;
-  color:rgb(241, 235, 235);
+  color:rgb(1, 28, 76);
 }
 
 .boxawayteam {
@@ -39,7 +39,7 @@ On the left you can read every single element with his class */
 
 /* This changes the color of the background of team name */
 .boxhometeam {
-  background: linear-gradient(143deg, rgb(53, 26, 26) 0%, rgb(71, 17, 17) 25%, rgba(71, 17, 17) 75%, rgb(70, 1, 1) 100%);
+  background: linear-gradient(143deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 25%, rgba(255, 255, 255) 75%, rgb(255, 255, 255) 100%);
 }
 .boxawayteam {
   background: linear-gradient(143deg, rgba(41, 15, 10, 0.993) 0%, rgba(37, 14, 7, 0.993) 25%, rgba(37, 14, 7, 0.993) 75%, rgba(43, 2, 1, 0.993) 100%);
