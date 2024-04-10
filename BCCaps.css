@@ -91,6 +91,7 @@ color:var(--capsdarkcolor)}
 }
 
 /*---- The following classes define the  --*/
+/*
 body {background:
 radial-gradient(black 15%, transparent 16%) 0 0,
 radial-gradient(black 15%, transparent 16%) 8px 8px,
@@ -102,3 +103,4 @@ background-size:16px 16px;}
 .separator:nth-child(1) {width:100%;float:left; margin-top:10px; padding-left:3%; font-family:arial; color:white;}
 
 .separator {font-size: .6em; width:100%;float:left; margin-top:30px; padding-left:3%; font-family:arial; color:white;}
+*/
