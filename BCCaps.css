@@ -85,6 +85,7 @@ color:var(--capsdarkcolor)}
 .containerhockey .boxovertimeoff #moment:before {
   content: "Period ";
   visibility: visible;
+  text-align: center;
 }
 .containerhockey .boxovertimeoff #overtime {
   display: none;
