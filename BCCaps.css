@@ -14,31 +14,33 @@
 }
 
 .containerhockey {
-  https://img.freepik.com/premium-vector/abstract-background-made-curved-lines-dark-red-colors_444390-5772.jpg);
-  background-color: rgba(128,0,0,0.5);
-  background-blend-mode: multiply;
+  background-color: rgb(255,255,255);
+ /* background-blend-mode: multiply;*/
 }
 
 .containerhockey .boxhomepoints {
-  background-color:maroon
+  background-color:white
 }
 
 .containerhockey .boxawaypoints {
-  background-color:maroon
+  background-color:black
 }
 
 .containerhockey .boxtimer {
-  background-color:maroon
+  background-color:white;
+  color:white;
 }
 
 .containerhockey .boxhometeam {
   background:url(https://static.wixstatic.com/media/5df3a1_485a059d16484689a4054b1aefbb0ccc~mv2.png/v1/fill/w_306,h_172,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/BCCAPS_2.png) no-repeat right; 
   background-size:10vw;
+  background-colour:white;
   padding-right: 50px
 }
 
 .containerhockey .boxawayteam {
   background:url(https://static.wixstatic.com/media/2f2434_5b37715cc1d24c83ad53d3c3bd93f21e~mv2_d_2732_2048_s_2.png/v1/crop/x_691,y_585,w_1325,h_1463/fill/w_192,h_210,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f2434_5b37715cc1d24c83ad53d3c3bd93f21e~mv2_d_2732_2048_s_2.png) no-repeat right; 
   background-size:8vw;
+  background-colour:black;
   padding-right: 50px
 }
