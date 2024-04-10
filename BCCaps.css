@@ -1,94 +1,101 @@
-/* INSTRUCTION and example for customize SOCCER HOCKEY or RUGBY scoreboard:
-Each element has one or more classes, so you can control one or more elements at the same time.
-On the left you can read every single element with his class */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
-/*--- First step - FONTS: CSS involves embedding fonts at the beginning of the document. You can import and use webfont, for example here we imported a Google font (https://fonts.google.com/) ---*/
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+/*----- Classi comuni ----*/
+:root {
+--skew: 0deg;
+--antiskew: -10deg;
+--text: #fff;
+--textinverted: rgba(111,1,0,.8); 
+--bordercolors: #3F464E;
+--linee: #3F464E; 
+--bkgimage: url(https://res.cloudinary.com/simonemanini/image/upload/v1640702808/Flexystyles/trophiesok_c2m6na.jpg) no-repeat;
+--bkgdark: red;
+--bkgmedium: rgba(111,1,0,.6);
+--signalcolor: rgb(1,28,76);
+--signaloff: #A90000;
+--capslightcolor: rgb(255,255,255);
+--capsdarkcolor:rgb(1,28,76);
+--awaylightcolor: white;
+--awaydarkcolor: black;
+--scorebackcolor: rgb(105,105,105);
 
-/* Every scoreboard has a unique container (SOCCER = containersoccer / BASKETBALL = containerbasket etc.. read them with your browser inspector). You can use them for override styles */
-
-/*this change font and background color of logo and result */
-.boxhomepoints, .space, .boxawaypoints, .sgrlogo:before {
-  background:rgba(255, 255, 255, 0);
-  color:black;
-}
-
-/* This change font of the points */
-.boxhomepoints, .space, .boxawaypoints {
-  font-family: 'Helvetica';
-  font-size: 1.3em;
-  font-weight: bold;
-  position:relative;
-}
-
-.boxhometeam {
-  font-family: 'Helvetica';
-  font-size: 1.3em;
-  font-weight: bold;
-  position:relative;
-  color:rgb(241, 235, 235);
+--timerwidth:2.7em;
+--timerpadding: 0 .5vw;
+--pointswidth:2em;
+--pointspadding: 0 .5vw;
+--momentwidth:1.7em;
+--labelsmargin: .1em;
 }
 
-.boxawayteam {
-  font-family: 'Helvetica';
-  font-size: 1.3em;
-  font-weight: bold;
-  position:relative;
-  color:white;
-}
+html, body {margin:0; padding:0;}
+em {font-style:normal;}
+.box, div {box-sizing: border-box; display:flex; align-items:center; height:100%;}
+.container {position:relative; box-sizing: border-box; height:auto; float:left; clear:both; width:auto; display:grid; column-gap: 1vw; background:rgb(212,212,212); background-size:cover; color:var(--text); border-left:solid .8vw var(--bordercolors); padding:.3vw; font-family: 'Helvitica', sans-serif;
+transform:skew(var(--skew));}
 
-/* This changes the color of the background of team name */
-.boxhometeam {
-  background: linear-gradient(143deg, rgb(53, 26, 26) 0%, rgb(71, 17, 17) 25%, rgba(71, 17, 17) 75%, rgb(70, 1, 1) 100%);
-}
-.boxawayteam {
-  background: linear-gradient(143deg, rgba(41, 15, 10, 0.993) 0%, rgba(37, 14, 7, 0.993) 25%, rgba(37, 14, 7, 0.993) 75%, rgba(43, 2, 1, 0.993) 100%);
-}
+.boxtimer {padding:var(--timerpadding); float:left; background:var(--bkgmedium);}
+.boxpoints {padding:var(--pointspadding); float:left;background:var(--bkgmedium); font-weight:bold;}
+.boxovertimeon {background:var(--signalcolor);}
 
-/*this insert team badges */
-.boxhometeam:before, .boxawayteam:before {
-  content:"";
-  position:absolute;
-  width: 10vw;
-  height: 9vw;
-}
-.boxhometeam {
-  justify-content: flex-end; padding-right:9vw;
-}
-.boxhometeam:before {
-  right:1vw;
-  background: url(https://static.wixstatic.com/media/5df3a1_485a059d16484689a4054b1aefbb0ccc~mv2.png/v1/fill/w_306,h_172,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/BCCAPS_2.png) no-repeat center;
-  background-size:5vw;
-}
+.sgrlogo {background-size: contain !important;}
 
-.boxawayteam {
-  justify-content: flex-start; padding-left:9vw;
-}
-.boxawayteam:before {
-  left:1vw;
-  background: url(https://static.wixstatic.com/media/2f2434_5b37715cc1d24c83ad53d3c3bd93f21e~mv2_d_2732_2048_s_2.png/v1/crop/x_691,y_585,w_1325,h_1463/fill/w_192,h_210,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f2434_5b37715cc1d24c83ad53d3c3bd93f21e~mv2_d_2732_2048_s_2.png) no-repeat center;
-  background-size:7vw;
-}
 
-.boxhomepoints, .boxhometeam {
-  border-left: solid 1vw rgb(80, 14, 14);
-}
-.boxawaypoints, .boxawayteam {
-  border-right: solid 1vw rgb(37, 11, 1);
-}
 
-/* This changes Quarter to Period */
-.boxovertimeoff #overtime {
-  display: none;
-}
 
-.boxovertimeoff #moment:before {
+/*---- HOCKEY --------*/
+.containerhockey {grid-template: auto / auto var(--pointswidth) 1.2em auto; column-gap:0; font-size:5vw;}
+.containerhockey .space {display:none;}
+.containerhockey .box {justify-content:center;}
+.containerhockey .boxteams {justify-content:flex-start;}
+
+
+.containerhockey .sgrlogo {grid-row: 1/2; grid-column: 3/4;}
+.containerhockey .boxhometeam {
+  grid-row: 1/2; 
+  grid-column: 1/2;
+  background:url(https://static.wixstatic.com/media/5df3a1_485a059d16484689a4054b1aefbb0ccc~mv2.png/v1/fill/w_306,h_172,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/BCCAPS_2.png) no-repeat left;
+  padding-left:12vw;
+  background-size:12vw;
+background-color:var(--capslightcolor);
+color:var(--capsdarkcolor)}
+.containerhockey .boxawayteam {
+  grid-row: 2/3; 
+  grid-column: 1/2;
+  background: url(https://static.wixstatic.com/media/2f2434_5b37715cc1d24c83ad53d3c3bd93f21e~mv2_d_2732_2048_s_2.png/v1/crop/x_691,y_585,w_1325,h_1463/fill/w_192,h_210,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f2434_5b37715cc1d24c83ad53d3c3bd93f21e~mv2_d_2732_2048_s_2.png) no-repeat left;
+  padding-left:12vw;
+  background-size:12vw;
+  background-color:var(--awaydarkcolor);
+  color:var(--awaylightcolor)}
+.containerhockey .boxhomepoints {grid-row: 1/2; grid-column: 2/3;
+background-color:var(--capslightcolor);
+color:var(--capsdarkcolor)}
+.containerhockey .boxawaypoints {grid-row: 2/3; grid-column: 2/3;
+  background-color:var(--awaydarkcolor);
+  color:var(--awaylightcolor)}
+.containerhockey .boxmoment {grid-row: 1/2; grid-column: 4/5; }
+.containerhockey .boxtimer {grid-row: 2/3; grid-column: 3/5;background-color:var(--scorebackcolor);}
+
+
+.containerhockey .sgrlogo {margin: 0 .1em;}
+.containerhockey .boxteams {padding-right: .2em;}
+.containerhockey .boxpoints {border-right: solid 0.3vw rgba(255,255,255,0.3);}
+.containerhockey .boxmoment {font-size: .7em; padding:0;}
+.containerhockey .boxtimer {min-width:var(--timerwidth);}
+.containerhockey .boxovertimeon {background: transparent; color: var(--signalcolor);}
+.containerhockey .boxovertimeoff #moment:before {
   content: "Period";
-  margin-right: 0.2em;
   visibility: visible;
 }
 
-/*-------------------------------------------------------------------
----- UNDER: background color and a little spase from margins. PLEASE DO NOT CONSIDER THIS-*/
-body {background:rgba(102, 102, 102, 0);}
-.containersoccer {margin: 30px 0;}
+/*---- The following classes define the  --*/
+body {background:
+radial-gradient(black 15%, transparent 16%) 0 0,
+radial-gradient(black 15%, transparent 16%) 8px 8px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+background-color:#282828;
+background-size:16px 16px;}
+
+.separator:nth-child(1) {width:100%;float:left; margin-top:10px; padding-left:3%; font-family:arial; color:white;}
+
+.separator {font-size: .6em; width:100%;float:left; margin-top:30px; padding-left:3%; font-family:arial; color:white;}
