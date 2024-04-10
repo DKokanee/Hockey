@@ -2,6 +2,11 @@
   display: none;
 }
 
+/*this change font andbackground color of logo and result */
+.boxhomepoints, .space, .boxawaypoints, .sgrlogo:before {
+  background:rgba(255, 255, 255, 0);
+  color:black;
+}
 .boxovertimeoff #moment:before {
   content: "Period";
   margin-right: 0.2em;
@@ -11,12 +16,12 @@
 }
 
 .boxovertimeoff #moment {
-  color:var(--signalcolor);
+  color:rgb(1,28,76);
 }
 
 .containerhockey {
   background-color: rgb(255,255,255);
- /* background-blend-mode: multiply;*/
+  background-blend-mode: multiply;
 }
 
 .containerhockey .boxhomepoints {
