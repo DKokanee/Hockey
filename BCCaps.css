@@ -83,7 +83,7 @@ color:var(--capsdarkcolor)}
 .containerhockey .boxtimer {min-width:var(--timerwidth);}
 .containerhockey .boxovertimeon {background: transparent; color: var(--signalcolor);}
 .containerhockey .boxovertimeoff #moment:before {
-  content: "Per. ";
+  content: "Period ";
   visibility: visible;
 }
 .containerhockey .boxovertimeoff #overtime {
