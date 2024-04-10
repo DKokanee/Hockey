@@ -79,11 +79,11 @@ color:var(--capsdarkcolor)}
 /*.containerhockey .sgrlogo {margin: 0 .1em;}*/
 .containerhockey .boxteams {padding-right: .2em;}
 .containerhockey .boxpoints {border-right: solid 0.3vw rgba(255,255,255,0.3);}
-.containerhockey .boxmoment {font-size: .8em; padding:0;}
+.containerhockey .boxmoment {font-size: .9em; padding-right:1vw;}
 .containerhockey .boxtimer {min-width:var(--timerwidth);}
 .containerhockey .boxovertimeon {background: transparent; color: var(--signalcolor);}
 .containerhockey .boxovertimeoff #moment:before {
-  content: "Per.";align-items: center;
+  content: "Period";align-items: center;
   visibility: visible;
 }
 .containerhockey .boxovertimeoff #overtime {
