@@ -61,7 +61,7 @@ color:var(--capsdarkcolor)}
 .containerhockey .boxawayteam {
   grid-row: 2/3; 
   grid-column: 1/2;
-  background: url(https://githack.com/DKokanee/Hockey/c2e40903b38e38d5969b3427444186574930a675/SDR%20Herricanes.png) no-repeat left;
+  background: url(https://raw.githack.com/DKokanee/Hockey/c2e40903b38e38d5969b3427444186574930a675/SDR%20Herricanes.png) no-repeat left;
   padding-left:12vw;
   background-size:12vw;
   background-color:var(--awaydarkcolor);
