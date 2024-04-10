@@ -76,15 +76,18 @@ color:var(--capsdarkcolor)}
 .containerhockey .boxtimer {grid-row: 2/3; grid-column: 3/5;background-color:var(--scorebackcolor);}
 
 
-.containerhockey .sgrlogo {margin: 0 .1em;}
+/*.containerhockey .sgrlogo {margin: 0 .1em;}*/
 .containerhockey .boxteams {padding-right: .2em;}
 .containerhockey .boxpoints {border-right: solid 0.3vw rgba(255,255,255,0.3);}
 .containerhockey .boxmoment {font-size: .7em; padding:0;}
 .containerhockey .boxtimer {min-width:var(--timerwidth);}
 .containerhockey .boxovertimeon {background: transparent; color: var(--signalcolor);}
 .containerhockey .boxovertimeoff #moment:before {
-  content: "Period";
+  content: "Per.";
   visibility: visible;
+}
+.containerhockey .boxovertimeoff #overtime {
+  display: none;
 }
 
 /*---- The following classes define the  --*/
