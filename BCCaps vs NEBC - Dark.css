@@ -13,10 +13,30 @@
 --bkgmedium: rgba(111,1,0,.6);
 --signalcolor: rgb(1,28,76);
 --signaloff: #A90000;
---capslightcolor: rgb(255,255,255);
---capsdarkcolor:rgb(1,28,76);
---awaylightcolor: white;
---awaydarkcolor: black;
+
+/*Caps White Use This*/
+  /*
+--capscolor1: rgb(1,28,76);
+--capscolor2: white;
+--capslogo: url(https://static.wixstatic.com/media/5df3a1_485a059d16484689a4054b1aefbb0ccc~mv2.png/v1/fill/w_306,h_172,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/BCCAPS_2.png);
+
+--awaycolor1: white;
+--awaycolor2: black;
+--awaylogo: url(https://static.wixstatic.com/media/2f2434_5b37715cc1d24c83ad53d3c3bd93f21e~mv2_d_2732_2048_s_2.png/v1/crop/x_691,y_585,w_1325,h_1463/fill/w_192,h_210,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f2434_5b37715cc1d24c83ad53d3c3bd93f21e~mv2_d_2732_2048_s_2.png);
+  */
+/*Caps Dark Use this */
+  
+--capscolor1: rgb(255,255,255);
+--capscolor2: rgb(1,28,76);
+--capslogo: url(https://raw.githack.com/DKokanee/Hockey/d25f13f06eebadb28a99f619654884a8959077a5/BC%20Capitals%20001b4d.jpg);
+ 
+--awaycolor1: black;
+--awaycolor2: white;
+--awaylogo: url(https://static.wixstatic.com/media/2f2434_5b37715cc1d24c83ad53d3c3bd93f21e~mv2_d_2732_2048_s_2.png/v1/crop/x_691,y_585,w_1325,h_1463/fill/w_192,h_210,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f2434_5b37715cc1d24c83ad53d3c3bd93f21e~mv2_d_2732_2048_s_2.png);
+  
+  
+  
+  
 --scorebackcolor: rgb(105,105,105);
 
 --timerwidth:2.7em;
@@ -53,25 +73,25 @@ transform:skew(var(--skew));}
 .containerhockey .boxhometeam {
   grid-row: 1/2; 
   grid-column: 1/2;
-  background:url(https://raw.githack.com/DKokanee/Hockey/d25f13f06eebadb28a99f619654884a8959077a5/BC%20Capitals%20001b4d.jpg) no-repeat left;
+  background:var(--capslogo) no-repeat left;
   padding-left:12vw;
   background-size:12vw;
-background-color:white;
-color:var(--capsdarkcolor)}
+background-color:var(--capscolor2);
+color:var(--capscolor1)}
 .containerhockey .boxawayteam {
   grid-row: 2/3; 
   grid-column: 1/2;
-  background: url(https://static.wixstatic.com/media/2f2434_5b37715cc1d24c83ad53d3c3bd93f21e~mv2_d_2732_2048_s_2.png/v1/crop/x_691,y_585,w_1325,h_1463/fill/w_192,h_210,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2f2434_5b37715cc1d24c83ad53d3c3bd93f21e~mv2_d_2732_2048_s_2.png) no-repeat left;
+  background: var(--awaylogo) no-repeat left;
   padding-left:12vw;
   background-size:12vw;
-  background-color:white;
-  color:var(--awaydarkcolor)}
+  background-color:var(--awaycolor2);
+  color:var(--awaycolor1)}
 .containerhockey .boxhomepoints {grid-row: 1/2; grid-column: 2/3;
-background-color:white;
-color:var(--capsdarkcolor)}
+background-color:var(--capscolor2);
+color:var(--capscolor1)}
 .containerhockey .boxawaypoints {grid-row: 2/3; grid-column: 2/3;
-  background-color:white;
-  color:var(--awaydarkcolor)}
+  background-color:var(--awaycolor2);
+  color:var(--awaycolor1)}
 .containerhockey .boxmoment {grid-row: 1/2; grid-column: 4/5;}
 .containerhockey .boxtimer {grid-row: 2/3; grid-column: 3/5;background-color:var(--scorebackcolor);}
 
