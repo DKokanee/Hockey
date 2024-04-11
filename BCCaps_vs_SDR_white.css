@@ -13,12 +13,32 @@
 --bkgmedium: rgba(111,1,0,.6);
 --signalcolor: rgb(1,28,76);
 --signaloff: #A90000;
---capslightcolor: rgb(255,255,255);
---capsdarkcolor:rgb(1,28,76);
---awaylightcolor: rgb(179,121,208);
---awaydarkcolor: black;
+
+/*Caps White Use This*/
+  
+--capscolor1: rgb(1,28,76);
+--capscolor2: white;
+--capslogo: url(https://static.wixstatic.com/media/5df3a1_485a059d16484689a4054b1aefbb0ccc~mv2.png/v1/fill/w_306,h_172,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/BCCAPS_2.png);
+
+--awaycolor1: rgb(123,72,149);
+--awaycolor2: black;
+--awaylogo: url(https://raw.githack.com/DKokanee/Hockey/c2e40903b38e38d5969b3427444186574930a675/SDR%20Herricanes.png);
+  
+/*Caps Dark Use this */
+  /*
+--capscolor1: white;
+--capscolor2: rgb(1,28,76);
+--capslogo: url(https://raw.githack.com/DKokanee/Hockey/d25f13f06eebadb28a99f619654884a8959077a5/BC%20Capitals%20001b4d.jpg);
+ 
+--awaycolor1: rgb(123,72,149);
+--awaycolor2: white;
+--awaylogo: url(https://raw.githack.com/DKokanee/Hockey/c2e40903b38e38d5969b3427444186574930a675/SDR%20Herricanes.png);
+  */
+  
+  
+  
 --scorebackcolor: rgb(105,105,105);
---blah: rgb(100,100,100);
+
 --timerwidth:2.7em;
 --timerpadding: 0 .5vw;
 --pointswidth:2em;
@@ -53,25 +73,25 @@ transform:skew(var(--skew));}
 .containerhockey .boxhometeam {
   grid-row: 1/2; 
   grid-column: 1/2;
-  background:url(https://static.wixstatic.com/media/5df3a1_485a059d16484689a4054b1aefbb0ccc~mv2.png/v1/fill/w_306,h_172,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/BCCAPS_2.png) no-repeat left;
+  background:var(--capslogo) no-repeat left;
   padding-left:12vw;
   background-size:12vw;
-background-color:var(--capslightcolor);
-color:var(--capsdarkcolor)}
+background-color:var(--capscolor2);
+color:var(--capscolor1)}
 .containerhockey .boxawayteam {
   grid-row: 2/3; 
   grid-column: 1/2;
-  background: url(https://raw.githack.com/DKokanee/Hockey/c2e40903b38e38d5969b3427444186574930a675/SDR%20Herricanes.png) no-repeat left;
+  background: var(--awaylogo) no-repeat left;
   padding-left:12vw;
   background-size:12vw;
-  background-color:var(--awaydarkcolor);
-  color:var(--awaylightcolor)}
+  background-color:var(--awaycolor2);
+  color:var(--awaycolor1)}
 .containerhockey .boxhomepoints {grid-row: 1/2; grid-column: 2/3;
-background-color:var(--capslightcolor);
-color:var(--capsdarkcolor)}
+background-color:var(--capscolor2);
+color:var(--capscolor1)}
 .containerhockey .boxawaypoints {grid-row: 2/3; grid-column: 2/3;
-  background-color:var(--awaydarkcolor);
-  color:var(--awaylightcolor)}
+  background-color:var(--awaycolor2);
+  color:var(--awaycolor1)}
 .containerhockey .boxmoment {grid-row: 1/2; grid-column: 4/5;}
 .containerhockey .boxtimer {grid-row: 2/3; grid-column: 3/5;background-color:var(--scorebackcolor);}
 
@@ -90,17 +110,3 @@ color:var(--capsdarkcolor)}
   display: none;
 }
 
-/*---- The following classes define the  --*/
-/*
-body {background:
-radial-gradient(black 15%, transparent 16%) 0 0,
-radial-gradient(black 15%, transparent 16%) 8px 8px,
-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
-radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
-background-color:#282828;
-background-size:16px 16px;}
-
-.separator:nth-child(1) {width:100%;float:left; margin-top:10px; padding-left:3%; font-family:arial; color:white;}
-
-.separator {font-size: .6em; width:100%;float:left; margin-top:30px; padding-left:3%; font-family:arial; color:white;}
-*/
