@@ -20,9 +20,9 @@
 --capscolor2: white;
 --capslogo: url(https://static.wixstatic.com/media/5df3a1_485a059d16484689a4054b1aefbb0ccc~mv2.png/v1/fill/w_306,h_172,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/BCCAPS_2.png);
 
---awaycolor1: rgb(123,72,149);
+--awaycolor1: rgb(96,131,10);
 --awaycolor2: black;
---awaylogo: url(https://raw.githack.com/DKokanee/Hockey/c2e40903b38e38d5969b3427444186574930a675/SDR%20Herricanes.png);
+--awaylogo: url(https://ugc.production.linktr.ee/LLGsROgaR3iRsTX02xz7_green%20sdr%20hockey%20logo.png);
   
 /*Caps Dark Use this */
   /*
@@ -30,9 +30,9 @@
 --capscolor2: rgb(1,28,76);
 --capslogo: url(https://raw.githack.com/DKokanee/Hockey/d25f13f06eebadb28a99f619654884a8959077a5/BC%20Capitals%20001b4d.jpg);
  
---awaycolor1: rgb(123,72,149);
+--awaycolor1: rgb(96,131,10);
 --awaycolor2: white;
---awaylogo: url(https://raw.githack.com/DKokanee/Hockey/c2e40903b38e38d5969b3427444186574930a675/SDR%20Herricanes.png);
+--awaylogo: url(https://ugc.production.linktr.ee/LLGsROgaR3iRsTX02xz7_green%20sdr%20hockey%20logo.png);
   */
   
   
@@ -109,4 +109,3 @@ color:var(--capscolor1)}
 .containerhockey .boxovertimeoff #overtime {
   display: none;
 }
-
