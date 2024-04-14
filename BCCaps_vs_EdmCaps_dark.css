@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 /*----- Classi comuni ----*/
@@ -20,9 +21,10 @@
 --capscolor2: white;
 --capslogo: url(https://static.wixstatic.com/media/5df3a1_485a059d16484689a4054b1aefbb0ccc~mv2.png/v1/fill/w_306,h_172,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/BCCAPS_2.png);
 
---awaycolor1: rgb(123,72,149);
---awaycolor2: black;
---awaylogo: url(https://raw.githack.com/DKokanee/Hockey/c2e40903b38e38d5969b3427444186574930a675/SDR%20Herricanes.png);
+--awaycolor1: white;
+--awaycolor2: rgb(69,112,255);
+--awaylogo: url(https://premieredjs.ca/wp-content/uploads/2022/10/CapsHockeyClub-980x872.png);
+--awaylogosize: 10vw;
   */
 /*Caps Dark Use this */
   
@@ -36,4 +38,78 @@
 --awaylogosize: 10vw;
   
   
-  BCCaps_vs_EdmCaps_white.css
+  
+  
+  
+--scorebackcolor: rgb(105,105,105);
+
+--timerwidth:2.7em;
+--timerpadding: 0 .5vw;
+--pointswidth:2em;
+--pointspadding: 0 .5vw;
+--momentwidth:1.7em;
+--labelsmargin: .1em;
+}
+
+html, body {margin:0; padding:0;}
+em {font-style:normal;}
+.box, div {box-sizing: border-box; display:flex; align-items:center; height:100%;}
+.container {position:relative; box-sizing: border-box; height:auto; float:left; clear:both; width:auto; display:grid; column-gap: 1vw; background:var(--scorebackcolor); background-size:cover; color:var(--text); border-left:solid .8vw var(--bordercolors); padding:.3vw; font-family: 'Helvitica', sans-serif;
+transform:skew(var(--skew));}
+
+.boxtimer {padding:var(--timerpadding); float:left; background:var(--bkgmedium);}
+.boxpoints {padding:var(--pointspadding); float:left;background:var(--bkgmedium); font-weight:bold;}
+.boxovertimeon {background:var(--signalcolor);}
+
+.sgrlogo {background-size: contain !important;}
+
+
+
+
+/*---- HOCKEY --------*/
+.containerhockey {grid-template: auto / auto var(--pointswidth) 1.2em auto; column-gap:0; font-size:5vw;}
+.containerhockey .space {display:none;}
+.containerhockey .box {justify-content:center;}
+.containerhockey .boxteams {justify-content:flex-start;}
+
+
+.containerhockey .sgrlogo {grid-row: 1/2; grid-column: 3/4; visibility: hidden;}
+.containerhockey .boxhometeam {
+  grid-row: 1/2; 
+  grid-column: 1/2;
+  background:var(--capslogo) no-repeat left;
+  padding-left:12vw;
+  background-size:12vw;
+background-color:var(--capscolor2);
+color:var(--capscolor1)}
+.containerhockey .boxawayteam {
+  grid-row: 2/3; 
+  grid-column: 1/2;
+  background: var(--awaylogo) no-repeat left;
+  padding-left:12vw;
+  background-size:12vw;
+  background-color:var(--awaycolor2);
+  color:var(--awaycolor1)}
+.containerhockey .boxhomepoints {grid-row: 1/2; grid-column: 2/3;
+background-color:var(--capscolor2);
+color:var(--capscolor1)}
+.containerhockey .boxawaypoints {grid-row: 2/3; grid-column: 2/3;
+  background-color:var(--awaycolor2);
+  color:var(--awaycolor1)}
+.containerhockey .boxmoment {grid-row: 1/2; grid-column: 4/5;}
+.containerhockey .boxtimer {grid-row: 2/3; grid-column: 3/5;background-color:var(--scorebackcolor);}
+
+
+/*.containerhockey .sgrlogo {margin: 0 .1em;}*/
+.containerhockey .boxteams {padding-right: .2em;}
+.containerhockey .boxpoints {border-right: solid 0.3vw rgba(255,255,255,0.3);}
+.containerhockey .boxmoment {font-size: .9em; padding-right:1vw;}
+.containerhockey .boxtimer {min-width:var(--timerwidth);}
+.containerhockey .boxovertimeon {background: transparent; color: var(--signalcolor);}
+.containerhockey .boxovertimeoff #moment:before {
+  content: "Period ";
+  visibility: visible;
+}
+.containerhockey .boxovertimeoff #overtime {
+  display: none;
+}
