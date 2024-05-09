@@ -20,9 +20,9 @@
 --capscolor2: white;
 --capslogo: url(https://static.wixstatic.com/media/5df3a1_485a059d16484689a4054b1aefbb0ccc~mv2.png/v1/fill/w_306,h_172,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/BCCAPS_2.png);
 
---awaycolor1: rgb(232,176,113);
+--awaycolor1: rgb(131,181,255);
 --awaycolor2: black;
---awaylogo: url(https://insideedge.blob.core.windows.net/images/9981.png);
+--awaylogo: url(https://scontent.fyvr4-1.fna.fbcdn.net/v/t39.30808-6/300166752_470404648426841_6549749289888007451_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=cCRnWEURSKQQ7kNvgEbuKNj&_nc_ht=scontent.fyvr4-1.fna&oh=00_AYAAuWg2Pd12Se9TpofD4qAEFKb3yu3gdJ9G4W5z_1Em-A&oe=66430B56);
 --awaylogosize: 12vw;
   */
 /*Caps Dark Use this */
@@ -31,9 +31,9 @@
 --capscolor2: rgb(1,28,76);
 --capslogo: url(https://raw.githack.com/DKokanee/Hockey/d25f13f06eebadb28a99f619654884a8959077a5/BC%20Capitals%20001b4d.jpg);
  
---awaycolor1: blue;
+--awaycolor1: rgb(25,22,64);;
 --awaycolor2: white;
---awaylogo: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fhelpmijleven.org%2Fsearch%2Fburning-eyes-causes-and-home-remedies-tt-%2F%3Fs%3Dlady-blue-devils-girls-hockey-tt-8eVwG2fx&psig=AOvVaw31RwKq0dFEUQlRtC7GVCGI&ust=1715369170099000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCKDvz6KmgYYDFQAAAAAdAAAAABAQ);
+--awaylogo: url(https://scontent.fyvr4-1.fna.fbcdn.net/v/t39.30808-6/300166752_470404648426841_6549749289888007451_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=5f2048&_nc_ohc=cCRnWEURSKQQ7kNvgEbuKNj&_nc_ht=scontent.fyvr4-1.fna&oh=00_AYAAuWg2Pd12Se9TpofD4qAEFKb3yu3gdJ9G4W5z_1Em-A&oe=66430B56);
 --awaylogosize: 12vw;
   
   
