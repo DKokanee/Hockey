@@ -81,7 +81,7 @@ color:var(--capscolor1)}
 .containerhockey .boxawayteam {
   grid-row: 2/3; 
   grid-column: 1/2;
-  background: var(--awaylogo) no-repeat left;
+  background: var(--awaylogo) no-repeat left top;
   padding-left:12vw;
   background-size:12vw;
   background-color:var(--awaycolor2);
