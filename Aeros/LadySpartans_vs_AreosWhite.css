@@ -16,15 +16,15 @@
 --signaloff: #A90000;
   
 --capslogo: url(https://raw.githack.com/DKokanee/Hockey/79d59b3ccc306aee0c67b253edf08f9535862215/logos/fsl/AerosLogo.png);
---awaylogo: url(https://raw.githack.com/DKokanee/Hockey/42d5336acb8ede53357f1e211b6f89ad4f02ef18/logos/fsl/LadySpartanLogo.jpg);
+--awaylogo: url(https://raw.githack.com/DKokanee/Hockey/79d59b3ccc306aee0c67b253edf08f9535862215/logos/fsl/LadySpartanLogo.png);
 
 /*Aeros White Use This*/
 
 --capscolor1: rgb(149,37,77);
 --capscolor2: white;
 
---awaycolor1: white;
---awaycolor2: rgb(232,29,117);
+--awaycolor1: rgb(232,29,117);
+--awaycolor2: black;
 --awaylogosize: 10vw;
 
 /*Aeros Dark Use this */
